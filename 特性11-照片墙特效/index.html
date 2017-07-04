@@ -2,42 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1">
+    <meta name="viewport" content="width=device-width" />
     <title>照片墙特效</title>
-    <style>
-        *{margin: 0; padding: 0; border: 0;}
-        li{list-style-type: none;}
-        html,body,ul{
-            width: 100%;
-            height: 100%;
-        }
-
-        #ps{
-            position: relative;
-        }
-
-        #ps li{
-            width: 250px;
-            height: 360px;
-            box-shadow: 0 0 10px #000;
-            background-color: #fff;
-
-            position: absolute;
-
-            transition: all 1s;
-        }
-
-        #ps li.current{
-            background-color: red;
-            left:50% !important;
-            top:50% !important;
-            transform: rotate(0deg) translate(-50%, -50%) scale(1.5, 1.5) !important;
-            z-index: 99;
-        }
-    </style>
+    <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
-    <ul id="ps"></ul>
+    <h3>照片墙特效</h3>
+    <ul id="ps" class="ps"></ul>
 
 <script src="js/Underscore-min.js"></script>
 <script>
@@ -59,10 +30,24 @@
 
         var allLis = ps.children;
 
-        // 1.2 求出屏幕的宽度和高度
-        var screenW = document.documentElement.clientWidth - 250;
-        var screenH = document.documentElement.clientHeight - 360;
+        //1.2.1
+        //求照片width height
+        function getCssStyle(obj,attr) {
+            if(obj.currentStyle){//只兼容IE
+                return obj.currentStyle[attr];
+            }
+            else {//兼容chrome 和FF
+                return window.getComputedStyle(obj,false)[attr];
+            }
+        }
+        var imgW = getCssStyle(li,'width');
+        var imgH = getCssStyle(li,'height');
+//        console.log(imgW, imgH);
 
+
+        // 1.2 求出屏幕的宽度和高度
+        var screenW = document.documentElement.clientWidth - parseInt(imgH);
+        var screenH = document.documentElement.clientHeight - parseInt(imgH);
 
         // 2. 遍历
         for(var i=0; i<allLis.length; i++){

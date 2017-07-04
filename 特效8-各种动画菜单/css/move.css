@@ -15,7 +15,7 @@ body{background:url(../images/beige_paper.png) left top repeat;}
     font-weight: normal;
     font-style: normal;
 }
-.link{
+/*.link{
     text-align:center;
     padding-top:10px;
 }
@@ -34,7 +34,7 @@ body{background:url(../images/beige_paper.png) left top repeat;}
 .link a.active{
     background:#259add;
     color:#FFF;
-}
+}*/
 .list{
     width:100%;
     height:auto;

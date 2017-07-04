@@ -4,6 +4,15 @@ body {
     background: #B68F6D url(../imgs/noise.png);
     overflow: hidden;
 }
+h3{
+    width: 100%;
+    display: block;
+    line-height: 60px;
+    margin:0 auto;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
 
 #div1 {
     width: 762px;

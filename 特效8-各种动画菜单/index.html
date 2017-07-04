@@ -3,9 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <title>各种动画菜单</title>
+    <link href="css/move.css" type="text/css" rel="stylesheet" />
+    <link href="css/move2.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="box">
+    <ul class="link">
+        <li class="cur">demo1</li>
+        <li>demo2</li>
+    </ul>
+    <div class="con active">
+        <ul class="list">
+            <li>
+                <span class="icon">Z</span>
+                <div class="text">
+                    <h2>关于我们</h2>
+                    <h3>Our web site is wmlove hexo</h3>
+                </div>
+            </li>
+            <li>
+                <span class="icon">N</span>
+                <div class="text">
+                    <h2>联系我们</h2>
+                    <h3>Our web site is wmlove hexo</h3>
+                </div>
+            </li>
+            <li>
+                <span class="icon">S</span>
+                <div class="text">
+                    <h2>javascript</h2>
+                    <h3>Our web site is wmlove hexo</h3>
+                </div>
+            </li>
+            <li>
+                <span class="icon">F</span>
+                <div class="text">
+                    <h2>html5</h2>
+                    <h3>Our web site is wmlove hexo</h3>
+                </div>
+            </li>
+            <li>
+                <span class="icon">B</span>
+                <div class="text">
+                    <h2>CSS3</h2>
+                    <h3>Our web site is wmlove hexo</h3>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <div class="con">
+        <ul class="list">
+            <li>
+                <div class="border"></div>
+                <span class="icon">Z</span>
+                <div class="text">
+                    <h2>关于我们</h2>
+                    <h3>Our web site is wmlove hexo</h3>
+                </div>
+            </li>
+            <li>
+                <div class="border"></div>
+                <span class="icon">N</span>
+                <div class="text">
+                    <h2>联系我们</h2>
+                    <h3>Our web site is wmlove hexo</h3>
+                </div>
+            </li>
+            <li>
+                <div class="border"></div>
+                <span class="icon">S</span>
+                <div class="text">
+                    <h2>javascript</h2>
+                    <h3>Our web site is wmlove hexo</h3>
+                </div>
+            </li>
+            <li>
+                <div class="border"></div>
+                <span class="icon">F</span>
+                <div class="text">
+                    <h2>html5</h2>
+                    <h3>Our web site is wmlove hexo</h3>
+                </div>
+            </li>
+            <li>
+                <div class="border"></div>
+                <span class="icon">B</span>
+                <div class="text">
+                    <h2>CSS3</h2>
+                    <h3>Our web site is wmlove hexo</h3>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+
 <script>
+    $(function () {
+        $('li').on('click',function () {
+            $(this).addClass('cur').siblings().removeClass('cur');
+            var index = $(this).index();
+//            console.log(index);
+            $('.con').eq(index).addClass('active').siblings().removeClass('active');
+        })
+    })
 
 </script>
 </body>

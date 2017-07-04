@@ -13,8 +13,16 @@ li {
 body {
     background: #f6f9fc;
 }
-
-div {
+h3{
+    width: 100%;
+    display: block;
+    line-height: 100px;
+    margin:0 auto;
+    text-align: center;
+    font-size: 30px;
+    color: #e60;
+}
+.show1 {
     width: 660px;
     height: 254px;
     border: 1px solid #ccc;
@@ -80,4 +88,14 @@ ul img {
 
 .bg5 {
     background: #7c0070;
+}
+
+.footer {
+    width: 100%;
+    display: block;
+    line-height: 100px;
+
+    /*background: skyblue;*/
+    margin:0 auto;
+    text-align: center;
 }

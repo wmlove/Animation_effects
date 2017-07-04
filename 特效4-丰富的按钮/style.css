@@ -5,6 +5,15 @@ img{border:none;}
 body{
     background:url(img/stucco.png);
 }
+h3{
+    width: 100%;
+    display: block;
+    line-height: 80px;
+    margin:0 auto;
+    text-align: center;
+    font-size: 30px;
+    color: #e60;
+}
 .test{
     width:320px;
     height:90px;

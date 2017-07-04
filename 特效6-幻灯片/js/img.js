@@ -1,5 +1,5 @@
 /**
- * Created by wm on 2017/5/25.
+ * Created by wm
  */
 window.onload = function()
 {
@@ -60,7 +60,7 @@ window.onload = function()
         var oS=document.createElement('script');
 
         oS.type='text/javascript';
-        oS.src='http://www.zhinengshe.com/zpi/zns_demo.php?id=3134';
+        oS.src='#';
 
         document.body.appendChild(oS);
     })();

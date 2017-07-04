@@ -1,5 +1,5 @@
 /**
- * Created by wm on 2017/5/25.
+ * Created by wm
  */
 function getStyle(obj, attr)
 {
@@ -39,13 +39,13 @@ function startMove(obj, json,timeNum, fnEnd)
     var attr;
     obj.timer=setInterval(function (){
 
-        var bStop=true;		//鏄笉鏄兘鍒颁簡锛屽亣璁炬墍鏈夌殑閮藉埌浜�
+        var bStop=true;
 
         for(attr in json)
         {
             var iCur=0;
 
-            //鍙栧綋鍓嶄綅缃�
+            //
             if(attr=='opacity')
             {
                 iCur=Math.round(parseFloat(getStyle(obj, attr))*100);
