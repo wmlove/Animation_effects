@@ -2,73 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>特效集合</title>
-    <style>
-        *{
-            margin:0;
-            padding: 0;
-            list-style: none;
-        }
-        html,body,.box{
-            width: 100%;
-            height: 100%;
-
-        }
-        .box{
-            margin: 0 auto;
-            /*background: pink;*/
-            height: auto;
-            background: linear-gradient(#fff,#ccc);
-        }
-        h2{
-            width: 100%;
-            line-height: 100px;
-            height: 100px;
-            text-align: center;
-            color: deepskyblue;
-        }
-        ul{
-            /*height: 100%;*/
-            height: auto;
-            margin: 0 auto;
-            width: 230px;
-            /*background: pink;*/
-        }
-        ul li{
-            /*float: left;*/
-            padding: 10px 20px;
-            text-align: left;
-        }
-        ul li:hover a{
-            color: red;
-        }
-        .foot{
-            text-align: center;
-            height: 80px;
-            line-height: 80px;
-            background: #ccc;
-        }
-    </style>
+    <title>Wmin的个人网站</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="box">
-    <h2>CSS3&javaScript 动态特效集合</h2>
-    <ul>
-        <li><a target=_blank href="特效1-CSS3图片展示特效/index.html">特效1-CSS3图片展示特效</a></li>
-        <li><a target=_blank href="特效2-3d标签云/index.html">特效2-3d标签云</a></li>
-        <li><a target=_blank href="特效3-手风琴/index.html">特效3-手风琴</a></li>
-        <li><a target=_blank href="特效4-丰富的按钮/index.html">特效4-丰富的按钮</a></li>
-        <li><a target=_blank href="特效5-Menu/index.html">特效5-Menu</a></li>
-        <li><a target=_blank href="特效6-幻灯片/index.html">特效6-幻灯片</a></li>
-        <li><a target=_blank href="特效7-时钟/index.html">特效7-时钟</a></li>
-        <li><a target=_blank href="特效8-各种动画菜单/index.html">特效8-各种动画菜单</a></li>
-        <li><a target=_blank href="特效9-旋转合并照片墙/index.html">特效9-旋转合并照片墙</a></li>
-        <li><a target=_blank href="特效10-计算器/index.html">特效10-计算器</a></li>
-        <li><a target=_blank href="特性11-照片墙特效/index.html">特性11-照片墙特效</a></li>
+<div class="nav">
+    <ul class="top">
+        <li><a href="#">首页</a><span></span></li>
+        <li><a href="#">技术</a><span></span></li>
+        <li><a href="#">作品</a><span></span></li>
+        <li><a href="#">项目</a><span></span></li>
+        <li><a href="#">联系</a><span></span></li>
     </ul>
 </div>
+<div class="banner">
+    <div class="photo">
+        <div class="item">
+            <a href="#"  class="cons">
+                <img src="images/01.jpg" alt="" title="第一张图片">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#" class="cons">
+                <img src="images/02.jpg" alt="" title="第二张图片">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#"  class="cons">
+                <img src="images/03.jpg" alt="" title="第三张图片">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#"  class="cons">
+                <img src="images/04.jpg" alt="" title="第四张图片">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#" class="cons">
+                <img src="images/05.jpg" alt="" title="第五张图片">
+            </a>
+        </div>
+    </div>
+</div>
+<!--幻灯片-->
+<div class="slide">
+    <div class="slideImg">
+        <ul>
+            <li><img src="images/img/01.jpg" alt=""></li>
+            <li><img src="images/img/02.jpg" alt=""></li>
+            <li><img src="images/img/03.jpg" alt=""></li>
+            <li><img src="images/img/04.jpg" alt=""></li>
+            <li><img src="images/img/01.jpg" alt=""></li>
+            <li><img src="images/img/02.jpg" alt=""></li>
+            <li><img src="images/img/03.jpg" alt=""></li>
+        </ul>
+    </div>
+</div>
+
+<!--content left-->
+<div class="content">
+    <div class="left">
+        <h2>动态特效集合</h2>
+        <ul>
+            <li><a target=_blank href="特效1-CSS3图片展示特效/index.html">特效1-CSS3图片展示特效</a></li>
+            <li><a target=_blank href="特效2-3d标签云/index.html">特效2-3d标签云</a></li>
+            <li><a target=_blank href="特效3-手风琴/index.html">特效3-手风琴</a></li>
+            <li><a target=_blank href="特效4-丰富的按钮/index.html">特效4-丰富的按钮</a></li>
+            <li><a target=_blank href="特效5-Menu/index.html">特效5-Menu</a></li>
+            <li><a target=_blank href="特效6-幻灯片/index.html">特效6-幻灯片</a></li>
+            <li><a target=_blank href="特效7-时钟/index.html">特效7-时钟</a></li>
+            <li><a target=_blank href="特效8-各种动画菜单/index.html">特效8-各种动画菜单</a></li>
+            <li><a target=_blank href="特效9-旋转合并照片墙/index.html">特效9-旋转合并照片墙</a></li>
+            <li><a target=_blank href="特效10-计算器/index.html">特效10-计算器</a></li>
+            <li><a target=_blank href="特性11-照片墙特效/index.html">特性11-照片墙特效</a></li>
+            <li><a target=_blank href="#">查看更多>></a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <div class="tab">
+            <div class="top">
+                <ul>
+                    <li class="active">
+                        <span>最新</span>
+                    </li>
+                    <li><span>美骑观察</span></li>
+                    <li><span>热点快报</span></li>
+                    <li><span>单车生活</span></li>
+                    <li><span>美骑快讯</span></li>
+                    <li><span>美骑日报</span></li>
+                </ul>
+            </div>
+            <div class="con">
+                <!--<div class="item show">
+                    <div class="title">
+                        <span>| 美骑快讯 |</span>
+                        <h3>老年拉几个老公斯蒂芬斯股份v</h3>
+                    </div>
+                    <div class="bottom">
+                       <a href="#">
+                           <img src="images/01.jpg" alt="">
+                       </a>
+                       <dl>
+                           <dt>经过长期准备老年拉几个老公斯蒂芬斯股份v老年拉几个老公斯蒂芬斯股份v老年拉几个老公斯蒂芬斯股份v经过长期准备老年拉几个老公斯蒂芬斯股份v老年拉几个老公斯蒂芬斯股份v老年拉几个老公斯蒂芬斯股份v</dt>
+                           <dd>2017-10-11</dd>
+                           <dd>作者：凌子</dd>
+                       </dl>
+                   </div>
+                </div>-->
+                <!--<p>美骑观察</p>-->
+                <!--<p>热点快报</p>-->
+                <!--<p>单车生活</p>-->
+                <!--<p>美骑快讯</p>-->
+                <!--<p>美骑日报</p>-->
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="foot">
     <p>制作 by wm</p>
 </div>
+
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
